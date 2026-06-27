@@ -1,0 +1,207 @@
+/* VARIABILI CSS */
+:root {
+    --bg: #222526;
+    --text: #2c2627;
+    --text-shadow: #e5e4e2;
+    --bg-neon-yt: #ff5c00;
+    --icon-color-yt: #ff073a;
+    --bg-neon-ig: #f535aa;
+    --icon-color-ig: #e30b5d;
+    --bg-neon-threads: #a800ff;
+    --icon-color-threads: #ffffff;
+    --bg-neon-tiktok: #fe0979;
+    --icon-color-tiktok: #00f2fe;
+    --bg-neon-fb: #75efff;
+    --icon-color-fb: #0400ff;
+}
+
+/* TAG ELEMENT */
+/* stile di come deve essere il body */
+body {
+    box-sizing:border-box;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background: var(--bg);
+    font-family: "CheeseMoka", sans-serif;
+    font-size: 85px;
+    color: var(--text);
+    filter: drop-shadow(0 0 10px var(--text-shadow));
+}
+
+/* CLASS */
+/* stile del container che contiene le icone dei social */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    height: 100%;
+}
+
+.responsive {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* stile generale delle icone0 */
+.bi {
+    font-size: 180px;
+    border-radius: 10px;
+    padding: 35px;
+    margin: 15px;
+}
+
+/* stile icona YT */
+.bi-youtube {
+    color: var(--icon-color-yt);
+}
+
+/* stile icona IG */
+.bi-instagram {
+    color: var(--icon-color-ig);
+}
+
+/* stile icona threads */
+.bi-threads {
+    color: var(--icon-color-threads);
+}
+
+/* stile icona tiktok */
+.bi-tiktok {
+    color: var(--icon-color-tiktok);
+}
+
+/* stile icona FB */
+.bi-facebook {
+    color: var(--icon-color-fb);
+}
+
+/* stile hover/animazione per le icone */
+.bi-youtube,
+.bi-instagram,
+.bi-threads,
+.bi-tiktok,
+.bi-facebook {
+    transition: 0.3s ease-in-out;
+}
+
+.bi-youtube:hover {
+    --neon-glow: var(--bg-neon-yt);
+    transform: scale(1.1);
+    animation: neon-pulse-yt 1s infinite ease-in-out;
+}
+
+.bi-instagram:hover {
+    transform: scale(1.1);
+    --neon-glow: var(--bg-neon-ig);
+    animation: neon-pulse-ig 1s infinite ease-in-out;
+
+}
+
+.bi-threads:hover {
+    transform: scale(1.1);
+    --neon-glow: var(--bg-neon-threads);
+    animation: neon-pulse-threads 1s infinite ease-in-out;
+}
+
+.bi-tiktok:hover {
+    transform: scale(1.1);
+    --neon-glow: var(--bg-neon-tiktok);
+    animation: neon-pulse-tiktok 1s infinite ease-in-out;
+}
+
+.bi-facebook:hover {
+    transform: scale(1.1);
+    --neon-glow: var(--bg-neon-fb);
+    animation: neon-pulse-fb 1s infinite ease-in-out;
+}
+
+/* AT-RULES CSS */
+/* @FONT-FACE */
+@font-face {
+    font-family: "CheeseMoka";
+    src: url("/src/fonts/CheeseMoka.otf") format(opentype);
+    font-weight: 200;
+    font-style: normal;
+    font-stretch: semi-condensed;
+}
+
+/* KEYFRAME YT */
+@keyframes neon-pulse-yt {
+    0% {
+        filter: drop-shadow(0 0 10px var(--neon-glow));
+    }
+
+    50% {
+        filter: drop-shadow(0 0 20px var(--neon-glow)) drop-shadow(0 0 40px var(--neon-glow));
+    }
+    
+    100% {
+        filter: drop-shadow(0 0 10px var(--neon-glow));
+    }
+}
+
+
+/* KEYFRAME IG */
+@keyframes neon-pulse-ig {
+    0% {
+        filter: drop-shadow(0 0 10px var(--neon-glow));
+    }
+
+    50% {
+        filter: drop-shadow(0 0 20px var(--neon-glow)) drop-shadow(0 0 40px var(--neon-glow));
+    }
+    
+    100% {
+        filter: drop-shadow(0 0 10px var(--neon-glow));
+    }
+}
+
+/* KEYFRAME THREADS */
+@keyframes neon-pulse-threads {
+    0% {
+        filter: drop-shadow(0 0 10px var(--neon-glow));
+    }
+
+    50% {
+        filter: drop-shadow(0 0 20px var(--neon-glow)) drop-shadow(0 0 40px var(--neon-glow));
+    }
+    
+    100% {
+        filter: drop-shadow(0 0 10px var(--neon-glow));
+    }
+}
+
+
+/* KEYFRAM TIKTOK */
+@keyframes neon-pulse-tiktok {
+    0% {
+        filter: drop-shadow(0 0 10px var(--neon-glow));
+    }
+
+    50% {
+        filter: drop-shadow(0 0 20px var(--neon-glow)) drop-shadow(0 0 40px var(--neon-glow));
+    }
+    
+    100% {
+        filter: drop-shadow(0 0 10px var(--neon-glow));
+    }
+}
+
+
+/* KEYFRAME  FB*/
+@keyframes neon-pulse-fb {
+    0% {
+        filter: drop-shadow(0 0 10px var(--neon-glow));
+    }
+
+    50% {
+        filter: drop-shadow(0 0 20px var(--neon-glow)) drop-shadow(0 0 40px var(--neon-glow));
+    }
+    
+    100% {
+        filter: drop-shadow(0 0 10px var(--neon-glow));
+    }
+}
