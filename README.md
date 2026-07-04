@@ -46,3 +46,20 @@ Se vuoi utilizzare e testare il progetto in locale, clonare la repository:
 ``` bash
 git clone [https://github.com/denisalecexe/dashboard-social.git] (https://github.com/denisalecexe/dashboard-social.git)
 ```
+
+---
+
+## Contribuire al progetto
+Le pull request sono benvenute.
+Per modifiche sostanziali, si prega di aprire prima una segnalazione per discutere di cosa si desidera modificare.
+
+---
+
+## Autore
+* **Denis (Dharelyx)** - Sviluppatore Junior appassionato di codice e problem solving.
+* Progetto completato come parte del mio percorso.
+
+---
+
+## Licenza
+Questo progetto è rilasciato sotto licenza [MIT] (https://choosealicense.com/licenses/mit/) 
