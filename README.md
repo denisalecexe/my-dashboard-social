@@ -36,6 +36,7 @@ dashboard-social/
 │   └── screenshots/
 │   │   └── dashboard.jpg
 ├── index.html
+├── LICENSE
 └── README.md
 ```
 
